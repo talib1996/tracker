@@ -16,8 +16,8 @@
 */
 
 //The main config file
-define('BASE_URL', 'http://localhost/tracker/');
-define('ENV', 'dev');
+define('BASE_URL', 'https://tracker38473894798327492834.herokuapp.com/');
+define('ENV', 'prod');
 define('DEFAULT_MODULE', 'persons');
 define('DEFAULT_CONTROLLER', 'Persons');
 define('DEFAULT_METHOD', 'index');
