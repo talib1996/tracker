@@ -61,13 +61,13 @@ function store(){
         }
     function retrieve(){
         if(isset($_SESSION['role'])){
-        $temp = (int)trim(post('cnic_phonenum'));
+        $temp = trim(post('cnic_phonenum'));
        if($temp){
             $params['phonenum'] = $temp;
             $params['cnic'] = $temp;
             $sql = 'select * from persons
             WHERE phonenum LIKE :phonenum
-            OR cnic LIKE :cnic 
+            OR cnic LIKE :cnic
             ORDER BY id';
             $all_rows = $this->model->query_bind($sql, $params, 'object');
             if(empty($all_rows)){

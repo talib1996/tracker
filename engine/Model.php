@@ -1,6 +1,9 @@
 <?php
 class Model {
 
+
+
+
     private $host = HOST;
     private $port = '';
     private $user = USER;
