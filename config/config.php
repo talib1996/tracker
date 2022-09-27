@@ -16,8 +16,8 @@
 */
 
 //The main config file
-define('BASE_URL', 'https://tracker-i5qi.vercel.app/');
-define('ENV', 'production');
+define('BASE_URL', 'http://localhost/tracker/');
+define('ENV', 'dev');
 define('DEFAULT_MODULE', 'persons');
 define('DEFAULT_CONTROLLER', 'Persons');
 define('DEFAULT_METHOD', 'index');

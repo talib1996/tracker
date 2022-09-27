@@ -23,7 +23,7 @@ class Model {
         $this->port = (defined('PORT') ? PORT : '3306');
         $this->current_module = $current_module;
 
-        $dsn = 'mysql:host=' . $this->host . ';port=' . $this->port . ';dbname=' . $this->dbname;
+        $dsn = DRIVER .':host=' . $this->host . ';port=' . $this->port . ';dbname=' . $this->dbname;
         $options = array(
             PDO::ATTR_PERSISTENT => true,
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
