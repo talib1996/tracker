@@ -78,7 +78,12 @@ function store(){
                 if($_SESSION['role'] == 'user'){
                 $result = $this->model->get_one_where('id', $_SESSION['id'], 'users');
                 $data['remaining_queries'] = $result->remaining_queries	 - 1;
-                $result = $this->model->update($_SESSION['id'], $data, 'users');
+            
+            
+            $sql = 'UPDATE users SET remaining_queries = :remaining_queries WHERE ID = '.$_SESSION['id'].';';
+            $update = $this->model->query_bind($sql, $data, 'object');
+                //$result = $this->model->update($_SESSION['id'], $data, 'users');
+                //die();
                 $_SESSION['remaining_queries'] = $data['remaining_queries'];
                 }
                 $flash_msg = 'Record/s found';
