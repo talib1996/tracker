@@ -14,6 +14,7 @@ function index(){
 
         //$_SESSION['role'];
 $data['form_location'] = BASE_URL.'persons/sign_in_check';
+$data['view_module'] = 'persons';
 $data['view_file'] = 'sign_in';
 $this->template('public', $data);
     }

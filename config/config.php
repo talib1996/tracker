@@ -16,7 +16,7 @@
 */
 
 //The main config file
-define('BASE_URL', 'http://localhost/tracker');
+define('BASE_URL', 'http://localhost/tracker/');
 define('ENV', 'dev');
 define('DEFAULT_MODULE', 'persons');
 define('DEFAULT_CONTROLLER', 'Persons');
